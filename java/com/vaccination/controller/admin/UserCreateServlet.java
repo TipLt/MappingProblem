@@ -21,7 +21,7 @@ public class UserCreateServlet extends HttpServlet {
         
         if (!checkAdminAuth(request, response)) return;
         
-        request.getRequestDispatcher("/views/admin/users/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/admin/create.jsp").forward(request, response);
     }
 
     @Override
