@@ -33,7 +33,7 @@ public class UserListServlet extends HttpServlet {
             request.setAttribute("currentPage", page);
             request.setAttribute("roleFilter", roleFilter);
             
-            request.getRequestDispatcher("/views/admin/users/list.jsp").forward(request, response);
+            request.getRequestDispatcher("/views/admin/list.jsp").forward(request, response);
             
         } catch (SQLException e) {
             e.printStackTrace();
